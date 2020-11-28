@@ -1,0 +1,73 @@
+html {
+    /* color principal*/
+    --color_pr: #6b0000;
+
+    /* Fuentes y fondo de fieldset */
+    --font_color: hsl(0, 0%, 90%);
+    --fieldset_color: #e2c2a4;
+
+    background-color: var(--color_pr);
+    display: inline;
+
+    color: var(--font_color);
+    font-size: larger;
+}
+
+fieldset {
+    margin: auto;
+    border-style: none;
+    padding: 1rem;
+
+    border-radius: 0.5em;
+    background-color: var(--fieldset_color);
+}
+
+/* todos los label dentro del fieldset */
+fieldset > label {
+    --font_color: rgba(0, 0, 0, 0.774);
+
+    display: block;
+
+    color: var(--font_color);
+    font-weight: bold;
+}
+
+input::placeholder {
+    font-size: medium;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+#Titulo {
+    display: flex;
+    width: min-content;
+    margin: auto;
+
+    /* Moviendo un poco a la izquierda  */
+    position: relative;
+    right: 10%;
+}
+
+#Contenedor {
+    /* Polimorfismo (si se puede llamar asi) */
+    --color_pr: #e3730b;
+
+    width: fit-content;
+    background-color: var(--color_pr);
+    border-radius: 1em;
+
+    /* Centrado */
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+
+    padding: 1rem;
+    padding-top: 0.5rem;
+}
+
+#Botones {
+    margin-top: 2%;
+}
